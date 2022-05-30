@@ -79,4 +79,11 @@ public class SysUserController {
         //浏览器重新访问/users.html
         return "redirect:" +  "/users.html";
     }
+
+    //退出登录
+    @RequestMapping("logout.do")
+    public String logoutDO(HttpSession session){
+        session.invalidate();
+        return "redirect:" +  "/login.html";
+    }
 }

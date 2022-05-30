@@ -7,7 +7,7 @@ isELIgnored="false" %>
     <title>Title</title>
 </head>
 <body>
-<div>当前用户的姓名：${user.user_name}；用户状态：${user.user_state==1 ? '正常':'暂停'}。 <a href="/logout.action">注销</a></div><br><br>
+<div>当前用户的姓名：${user.user_name}；用户状态：${user.user_state==1 ? '正常':'暂停'}。 <a href="${pageContext.request.contextPath}/logout.do">注销</a></div><br><br>
 <div>用户列表： </div>
 <table border="1">
     <tr>
