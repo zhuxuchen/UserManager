@@ -13,7 +13,7 @@ public class LoginInterceptor implements HandlerInterceptor {
                              Object handler) throws Exception {
         HttpSession session = request.getSession();
 
-        SysUser user = (SysUser) request.getAttribute("user");
+        SysUser user = (SysUser) session.getAttribute("user");
         if (user == null){
             response.setContentType("text/html;charset=utf-8");
             response.setHeader("Refresh","5;/UserManager/login.html");
