@@ -8,7 +8,7 @@
       </options>
     </properties>
     <root id="archive" name="UserManager-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="UserManager:war exploded" />
+      <element id="artifact" artifact-name="UserManager" />
     </root>
   </artifact>
 </component>
